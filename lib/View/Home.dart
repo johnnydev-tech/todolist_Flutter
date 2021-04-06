@@ -16,7 +16,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("TODO List"),
+        title: Text("TODO"),
       ),
       body: Container(
         child: Column(
@@ -45,11 +45,19 @@ class _HomeState extends State<Home> {
                   title: Text("Nova Tarefa"),
                   content: TextField(
                     decoration: InputDecoration(labelText: "Digite sua Tarefa"),
+                    onChanged: (text) {},
                   ),
                   actions: [
                     FlatButton(
+                      child: Text("Cancelar"),
+                      onPressed: () => Navigator.pop(context),
+                    ),
+                    FlatButton(
                       child: Text("Salvar"),
-                      onPressed: () {},
+                      onPressed: () {
+                        //TODO: Salvar
+                        Navigator.pop(context);
+                      },
                     ),
                   ],
                 );
