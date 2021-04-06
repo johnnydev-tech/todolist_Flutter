@@ -6,7 +6,11 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  List _listaTarefas = ["Estudar Flutter", "Fazer Curso", "Ler"];
+  List _listaTarefas = [
+    "Estudar Flutter",
+    "Fazer Curso",
+    "Ler",
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +49,7 @@ class _HomeState extends State<Home> {
                   actions: [
                     FlatButton(
                       child: Text("Salvar"),
-                      onPressed: (){},
+                      onPressed: () {},
                     ),
                   ],
                 );
